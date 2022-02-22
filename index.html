@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel='stylesheet' href='./iconos/uicons-regular-rounded/uicons-regular-rounded/css/uicons-regular-rounded.css'/>
+    <title>Cabify</title>
+  </head>
+  <body>
+    <div class="box">
+      <div class="logo">
+        <img
+          src="./imagenes/pngegg.png"
+          alt="Cabify logo"
+          class='responsive'
+        />
+      </div>
+      <div class="element-form">
+        <h1 id='box1'>¡Bienvenido a Cabify!</h1>
+        <p>
+          Conductores profesionales, vehículos modernos y posibilidad de elegir
+          tus preferencias de viaje de la forma más fácil. Por fin viajarás como
+          te mereces.
+        </p>
+        <p class='login'>¿Ya tienes una cuenta? <a href="#">Entra aquí</a></p>
+        <form>
+        <div>
+          <label for="email" class="formulario">Email</label>
+          <input type="text" id="email" class="box2" pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$" title="Introduce una cuenta de correo correcta (example@example.com)" required/>
+        </div>
+        <div>
+          <label for="name" class="formulario">Usuario</label>
+          <input type="text" id="name" class="box2" title='Introduce tu nombre de usuario' required/>
+        </div>
+        <div>
+          <label for="password" class="formulario">Contraseña</label>
+          <a href='#' class='floating'>👁‍🗨 Mostrar</a>
+          <!-- <a href='#'><i class="fi fi-rr-eye" id='icon'></i></a> -->
+          <input
+            type="password"
+            pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$"
+            title="Incluye al menos 1 mayúscula, 1 minúscula, 1 número y 1 carácter especial"
+            required
+            class="box2"
+          />
+          <div class='required'>
+              <p class='requirements'>La contraseña debe contener:</p>
+              <ul class='list'>
+                  <li> Una letra mayúscula</li>
+                  <li> Una letra minúscula</li>
+                  <li> Un número</li>
+                  <li> Un carácter especial</li>
+                  <li> Entre 8 y 20 carácteres</li>
+              </ul>
+          </div>
+          <div>
+              <input type="submit" class="button" value="Registrarme">
+              <a href='#' class='sign-up'>Entrar</a>
+          </div>
+        </form>
+        </div>
+        <div>
+            <p class='str-footer'>Al pulsar el botón "Registrarme" estás creando una cuenta de Cabify y aceptas los <a href='#'>Términos y condiciones</a> y la <a href='#'>Política de privacidad</a>.</p>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
